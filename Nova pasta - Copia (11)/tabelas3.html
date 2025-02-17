@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+    <head>        
+        <title>Pagina Html</title>
+        <meta charset="utf-8">
+        <!--Autor: Rogério dos Santos
+            Objetivo: Construir tabela
+            Data: 13/10/2020
+            Pagina: tabela        
+        -->
+    </head>
+    <body>
+        <!--tr - Table row (Linha da tabela)
+            td - Table Data (Dados que estão na tabela)
+            th - Table Header - Cabeçalho da tabela
+          
+        -->
+        <h2 align="center">Exemplo tabela 1</h2>
+        <table border="5px" dotted black width = "600" align="center">
+
+            <tr>
+                <td>Valor1</td>
+                <td>Valor2</td>
+                <td>Valor3</td>                
+            </tr>
+            <tr>
+                <td bgcolor="yellow" colspan="2">Duas células</td>
+                <td> Valor</td>
+            </tr>            
+
+            <tr>
+                <td>Valor</td>
+                <td bgcolor="blue" colspan="2">Valor</td>
+            </tr>         
+            <tr>
+                <td>Valor</td>
+                <td>Valor</td>
+                <td>Valor</td>
+            </tr>   
+                            
+        </table>
+
+        <hr>
+        <h2 align="center"> Exemplo tabela 2</h2>
+        <table width="600" border="1px" align="center">
+            <tr>
+                <td bgcolor="gray" rowspan="2">Valor 1 </td>
+                <td>Valor</td>
+                <td>Valor</td>
+            </tr>
+            <tr>
+                <td>Valor</td>
+                <td  bgcolor="red" rowspan="2">Valor</td>
+            </tr>
+
+            <tr>
+                <td>Valor</td>
+                <td>Valor</td>
+            </tr>
+
+        </table>
+        <hr>
+
+        <h2 align="center"> Exemplo tabela 3</h2> 
+        <table border ="1px" width="600" align="center">
+            <tr align="center" bgcolor="yellow">
+                <td>
+                    <table width = "100%" border="1px">
+                        <tr>
+                            <td>Valor1</td>
+                            <td>Valor2</td>
+                            <td>Valor3</td>
+                         </tr>
+                         <tr>
+                            <td>Valor4</td>
+                            <td>Valor5</td>
+                            <td>Valor6</td>
+                         </tr>
+                    </table>     
+                </td>
+                <td>Coluna 2</td>        
+                <td>Coluna 3</td>        
+            </tr>
+            <tr align = "left">
+                <td>Valor4</td>
+                <td>Valor5</td>
+                <td>Valor6</td>
+            </tr>
+            <tr align = "left">
+                <td>Valor7</td>
+                <td>Valor8</td>
+                <td>Valor9</td>
+            </tr>
+
+            <tr align = "right" bgcolor="yellow">
+                <td>Valor10</td>
+                <td>Valor11</td>
+                <td>Valor12</td>
+            </tr>
+     </table>      
+
+
+    </body>
+
+</html>

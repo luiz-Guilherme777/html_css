@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Exemplo Formulário HTML 5</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form>
+            <!--Fieldset - Forma uma caixa em volta 
+                legend - identifica as informações que vão na caixa
+                required - Define que o campo é requerido/obrigatório
+            
+            -->
+           <fieldset>
+                <legend>Conta de usuário</legend>
+                <label>Email</label>
+
+                <!--type - Identifica o tipo do campo
+                    type="email" - Permite entrar com endereço de e-mail
+                --> 
+                <input type="email"  name="email" >
+                <br>
+                <label>Senha *</label>
+                <!--type="password - Identifica a entrada de senha -->
+                <input type="password" name="senha"  >
+           </fieldset>
+
+            <!--Dados pessoais-->   
+ 
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>Nome: *</label>
+                <!--type="text" - Entrada para texto
+                 placeholder - Define uma marca da água na caixa de texto-->
+
+                <input type="text" width="150" name="nome" placeholder="Informe o nome" width="40" maxlength="40"  required/>
+                <br>
+
+                <label>Telefone:*</label>
+                <input type="text" name="nome" placeholder="(99)9999-9999" required/>
+                <br>
+
+                <label>Sexo:</label>
+                <!--type="radio" - Define botões de rádio
+                    Para o campo do tipo radio, tem que ser o mesmo nome, permitindo somente uma escolha              
+            
+                -->
+                <label>Masculino</label>
+                <input type="radio" name="sexo" value="masculino" checked/>
+                <label>Feminino</label>
+                <input type="radio" name="sexo" value="feminino" />
+                <br>
+
+                <label>Dt nascimento</label>
+                <!--type="date"- Entrada para campo do tipo data(Abre um calendário-->
+                <input type="date" name="dtnascimento" />
+                <br>
+                <label>Idade</label>
+
+                 <!--type="number" - Entrada para números
+                     min - O valor mínimo
+                     max - O valor máximo
+                -->   
+                <input type="number" name="idade" min=0 max=100 placeholder="Informe a sua idade"/>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                <label>Rua</label>
+                <input type="text" name="rua" placeholder="logradouro" />
+                <label>Número</label>
+                <input type="number" name="numero"  min=1  placeholder="Número casa, apto" />
+                <br>
+                <label>Complemento</label>
+                <input type="text" name="complemento" placeholder="Apto, casa" />
+                <br>
+                <label>Cidade</label>
+                <input type="text" name="cidade" placeholder="Informe a sua cidade"/>
+                <br>
+                <label>Estado</label>
+
+                <!--SELECT - Permite fazer uma seleção em uma caixa suspensa
+                    option - São as opções que tem em uma caixa suspensa
+                    value  - É o valor do item que é selecionado.
+                            Ex: Se escolher Santa Catarina o que será salvo no banco de dados é SC
+                -->
+                <select name="estado">
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </select>
+                <fieldset>
+                    <!--textarea - é a tag que permite digitar pequenos textos
+                        cols - Define o número de colunas
+                        rows - Define o número de linhas
+                    -->
+                    <legend>Observações</legend>
+                    <legend>Fale mais sobre voce</legend>
+                    <textarea placeholder="Coloque de forma resumida o seu hobby" cols="60" rows="5">
+                    </textarea>
+
+                </fieldset>
+                <!--type submit- Tipo do botão para submeter os dados do formulário -->
+                <input type="submit" value="Salvar">
+                
+            </fieldset>
+
+        </form>
+
+      
+    </body>
+
+</html>
