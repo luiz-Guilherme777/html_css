@@ -1,0 +1,57 @@
+body{
+    font-family: "Trebuchet MT", Helvetica, sans-serif;
+}
+
+fieldset {
+    margin: 1em 0;
+    padding: 1em;
+    border:1px solid #ccc;
+    background: #f8f8f8;
+}
+
+legend{
+    font-weight: bold;
+    color:blue
+}
+label{
+    display: block;
+    margin-top: 0.5em;
+    cursor:pointer;
+}
+/* Essa é uma forma que pode se estilizada somente para input do tipo TEXT*/
+
+input[type="text"]{
+    width:60em;
+}
+
+input{
+    height: 2em;
+    border-radius:5px ;
+}
+
+textarea{
+    width:20em;
+    height: 10em;
+}
+
+input.radio, input.checkbox, input.submit{
+    width: auto;
+}
+.radio{
+    margin-right: 1em;
+}
+
+#botao{
+    width:80px;
+    height:50px;
+    background-color: blue;
+    color:white;
+    border-radius: 7px;
+    cursor:pointer;
+}
+
+#botao:hover{
+    background-color: aqua;
+    color:black;
+}
+
