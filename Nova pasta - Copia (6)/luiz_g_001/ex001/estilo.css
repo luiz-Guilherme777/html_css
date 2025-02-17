@@ -1,0 +1,54 @@
+body{
+    background-color: #292929;  font-family: "Trebuchet MT", Helvetica, sans-serif;
+  }
+  
+  fieldset {
+  
+      margin: 6 em;
+      padding: 2em;
+      background-color: #3f3f3f;
+      border: 2px solid rgb(255, 255, 255); 
+  
+  }
+  
+  legend{
+      font-weight: bold;
+      color:rgb(255, 255, 255)
+  }
+  
+  input[type="text"]{
+      width: 60px;
+  }
+  
+  input{
+      height: 2em;
+      border-top-left-radius: 1%;
+
+  }
+  
+  
+  input.radio, input.checkbox, input.submit{
+      width: auto;
+  }
+  .radio{
+      margin-right: 2em;
+  }
+  
+  #botao{
+    width:80px;
+    height:50px;
+    background-color: rgb(255, 255, 255);
+    color:white;
+    border-radius: 7px;
+    cursor:pointer;
+}
+
+#botao:hover{
+    background-color: rgb(107, 107, 107);
+    color:rgb(56, 56, 56);
+}
+a{
+    margin-left: 50px ;
+    color:aquamarine
+
+}
